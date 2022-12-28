@@ -1,0 +1,9 @@
+import pyqrcode
+from pyqrcode import QRCode
+
+#string which represent the QR code
+s="https://www.youtube.com/watch?v=YaEG2aWJnZ8"
+
+#generate QR code
+url = pyqrcode.create(s)
+url.svg("qr.svg", scale=8)
